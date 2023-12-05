@@ -9,12 +9,12 @@ REPL_PATH=./
 # multiple source files are separated by spaces
 # Modify it to reflect your application's source files
 
-SRCS = CxxTest.cpp
+SRCS = main.cpp 
 
 #
 # executable name -- modify to your executable name
 #
-EXE  = CxxTest
+EXE  = main
 
 #
 # Everything below that should not have to change ever.

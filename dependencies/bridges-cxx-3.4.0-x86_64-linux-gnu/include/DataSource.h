@@ -1356,7 +1356,7 @@ cout << url << endl;
 					}
 					catch (CacheException& ce) {
 						//something went bad trying to access the cache
-						std::cerr << "Exception while storing in cache. Weird but not critical." << std::endl;
+						//std::cerr << "Exception while storing in cache. Weird but not critical." << std::endl;  
 					}
 				}
 
@@ -1717,8 +1717,8 @@ cout << url << endl;
 					}
 					catch (CacheException& ce) {
 						//something went bad trying to access the cache
-						std::cerr << "Exception while storing in cache. " <<
-							"Weird but not critical.\n";
+						//std::cerr << "Exception while storing in cache. " <<
+							//"Weird but not critical.\n";
 						if (debug())
 							std::cerr << "Tried to store hash=" << hash_value <<
 								" key = " << data_json << std::endl;

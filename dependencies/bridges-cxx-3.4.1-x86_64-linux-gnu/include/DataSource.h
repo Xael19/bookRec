@@ -1387,7 +1387,7 @@ cout << url << endl;
 					}
 					catch (CacheException& ce) {
 						//something went bad trying to access the cache
-						std::cerr << "Exception while storing in cache. Weird but not critical." << std::endl;
+						//std::cerr << "Exception while storing in cache. Weird but not critical." << std::endl;
 					}
 				}
 
@@ -1757,8 +1757,8 @@ cout << url << endl;
 
 					  // This test should only ever be true if something wrong happens server-side
 					  if (hash_value == "false") {
-					    std::cerr << "Error while gathering hash value for "<<data_type<<" dataset..\n"
-						      << "Weird but not critical.\n";
+					    //std::cerr << "Error while gathering hash value for "<<data_type<<" dataset..\n"
+						      //<< "Weird but not critical.\n";
 					  }
 					  else {
 					    my_cache.putDoc(hash_value, data_json);
@@ -1766,8 +1766,8 @@ cout << url << endl;
 					}
 					catch (CacheException& ce) {
 						//something went bad trying to access the cache
-						std::cerr << "Exception while storing in cache. " <<
-							"Weird but not critical.\n";
+						//std::cerr << "Exception while storing in cache. " <<
+							//"Weird but not critical.\n";
 						if (debug())
 							std::cerr << "Tried to store hash=" << hash_value <<
 								" key = " << data_json << std::endl;
